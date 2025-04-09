@@ -1,3 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using WhiteLagoon.Web.Data;
+using WhiteLagoon.Web.Repository;
+using WhiteLagoon.Web.Repository.IRepository;
+using WhiteLagoon.Web.Service;
+using WhiteLagoon.Web.Service.IService;
+
 namespace WhiteLagoon.Web
 {
     public class Program
@@ -8,6 +15,19 @@ namespace WhiteLagoon.Web
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+                builder.Configuration.GetConnectionString("DefaultConnection")
+                ));
+
+            //repo
+            builder.Services.AddScoped<IVillaRepository,VillaRepository>();
+
+            //services
+            builder.Services.AddScoped<IVillaService,VillaService>();
+
+            //UOF
+            builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 
             var app = builder.Build();
 

@@ -1,0 +1,35 @@
+﻿@model Villa
+
+<form method="post" asp-action="Delete">
+ 
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" readonly />
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <input asp-for="Description" readonly />
+    </div>
+    <div>
+        <label asp-for="Price"></label>
+        <input asp-for="Price" readonly />
+    </div>
+    <div>
+        <label asp-for="Sqft"></label>
+        <input asp-for="Sqft" readonly />
+    </div>
+    <div>
+        <label asp-for="Occupancy"></label>
+        <input asp-for="Occupancy" readonly />
+    </div>
+    <div>
+        <label asp-for="ImageUrl"></label>
+        <input asp-for="ImageUrl" readonly />
+    </div>
+    <div>
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>

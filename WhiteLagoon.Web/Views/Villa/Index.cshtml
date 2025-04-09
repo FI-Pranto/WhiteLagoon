@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Villa>
+
+
+	<a asp-asp-controller="Villa" asp-action="AddVilla">Create</a>
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th width="10%">Name</th>
+				<th width="10%">Description</th>
+				<th width="10%">Price</th>
+				<th width="10%">Sqft</th>
+				<th width="10%">Occupancy</th>
+				<th width="10%">Image</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach(var obj in Model){
+				<tr>
+					<td>@obj.Name</td>
+					<td>@obj.Description</td>
+					<td>@obj.Price</td>
+					<td>@obj.Sqft</td>
+					<td>@obj.Occupancy</td>
+					<td><img height="40" width="40" src="@obj.ImageUrl" /></td>
+					<td><a asp-controller="Villa" asp-action="Edit" asp-route-id="@obj.Id">Edit</a> </td>
+				    <td><a asp-controller="Villa" asp-action="Delete" asp-route-id="@obj.Id">Delete</a> </td>
+				</tr>
+			}
+		</tbody>
+	</table>
+	

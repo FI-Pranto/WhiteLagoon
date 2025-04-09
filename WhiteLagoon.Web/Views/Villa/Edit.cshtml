@@ -1,0 +1,39 @@
+﻿@model Villa
+
+<form method="post">
+	<input type="hidden" asp-for="Id" /> @*must be given in case of attribute routing*@
+	<div>
+		<label asp-for="Name"></label>
+		<input asp-for="Name" />
+		<span asp-validation-for="Name"></span>
+	</div>
+	<div>
+		<label asp-for="Description"></label>
+		<input asp-for="Description" />
+		<span asp-validation-for="Description"></span>
+	</div>
+	<div>
+		<label asp-for="Price"></label>
+		<input asp-for="Price" />
+		<span asp-validation-for="Price"></span>
+	</div>
+	<div>
+		<label asp-for="Sqft"></label>
+		<input asp-for="Sqft" />
+		<span asp-validation-for="Sqft"></span>
+	</div>
+	<div>
+		<label asp-for="Occupancy"></label>
+		<input asp-for="Occupancy" />
+		<span asp-validation-for="Occupancy"></span>
+	</div>
+	<div>
+		<label asp-for="ImageUrl"></label>
+		<input asp-for="ImageUrl" />
+		<span asp-validation-for="ImageUrl"></span>
+	</div>
+	<div>
+		<button type="submit">Edit</button>
+		<a asp-controller="Villa" asp-action="Index">Cancle</a>
+	</div>
+</form>
