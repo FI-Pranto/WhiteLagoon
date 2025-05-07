@@ -7,17 +7,18 @@
 
 ## ✨ Features
 
-✅ User Registration and Login
-✅ Browse Available Tours
-✅ Book and Manage Tours
-✅ Admin Dashboard for Tour Management
-✅ Role-Based Authorization (User & Admin)
-✅ Responsive UI using Bootstrap
-✅ Clean Architecture Implementation
-✅ Secure Password Handling with ASP.NET Identity
-✅ CRUD Operations for Tours, Bookings, and Categories
-✅ Booking Confirmation & History
-✅ Entity Framework Core for Database Access
+- ✅ User Registration and Login  
+- ✅ Browse Available Tours  
+- ✅ Book and Manage Tours  
+- ✅ Admin Dashboard for Tour Management  
+- ✅ Role-Based Authorization (User & Admin)  
+- ✅ Responsive UI using Bootstrap  
+- ✅ Clean Architecture Implementation  
+- ✅ Secure Password Handling with ASP.NET Identity  
+- ✅ CRUD Operations for Tours, Bookings, and Categories  
+- ✅ Booking Confirmation & History  
+- ✅ Entity Framework Core for Database Access  
+
 
 ---
 
