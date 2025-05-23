@@ -76,9 +76,6 @@ Visit `https://localhost:5001` in your browser.
 
 ---
 
-## 📸 Screenshots (Optional)
-
-*Add demo screenshots or a short video link here for better understanding.*
 
 ---
 
